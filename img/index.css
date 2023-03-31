@@ -1,0 +1,213 @@
+ .logo img {
+     width: 100px;
+     height: 100px;
+     border-radius: 34px;
+ }
+
+ .logo * {
+     margin: 0px;
+     padding: 0px;
+ }
+
+ #navbar {
+     display: flex;
+     align-items: center;
+ }
+
+ /* Navigation bar:  list styling: */
+ #navbar {
+     position: relative;
+     font-family: monospace;
+ }
+
+ #navbar ul {
+     display: flex;
+
+ }
+
+ #navbar::before {
+     content: "";
+     background-color: black;
+     position: absolute;
+     top:0px;
+     left:0px;
+     height: 95%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.4;
+ }
+
+ #navbar ul li {
+     list-style: none;
+     font-size: 1.3rem;
+ }
+
+ #navbar ul li a {
+     color: white;
+     display: block;
+     padding: 3px 22px;
+     border-radius: 20px;
+     text-decoration: none;
+ }
+
+ #navbar ul li a:hover {
+     color: black;
+     background-color: white;
+     
+ }
+
+ /* HOME SECTION */
+ #home {
+     display: flex;
+     flex-direction: column;
+     height:800px;
+     padding: 3px 200px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #home::before {
+     content: "";
+     background: url('../big.jpg') no-repeat center center/cover;
+     position: absolute;
+     height: 100%;
+     top:0px;
+     left:0px;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.89;
+ }
+ #home h1{
+    color:white;
+    text-align: center;
+ }
+ #home p{
+    color:white;
+    text-align: center;
+    font-size:1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+ }
+ /* services section */
+ 
+ #services{
+    margin:34px ;
+    display:flex;
+    
+    margin:120px;
+    width: 95%;
+    }
+   
+    #services .box{
+        border: 2px  solid red;
+        box-shadow: 2px 2px 2px 2px red;
+        padding:34px;
+        margin:3px 6px;
+        border-radius:23px;
+        background-color: rgb(251, 216, 216);
+    }
+ #services .box img{
+    height:156px;
+    display:block;
+    margin:auto;
+    
+ }
+ #services .box p{
+    font-family:cursive;
+
+ }
+ /* client section */
+
+ #client-section{
+    height:344px;
+    position: relative;
+ }
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url('../big1.jpg');
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    /* opacity: 0.3; */
+}
+
+ #clients{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+ }
+ .client-items img{
+    height: 120px;
+    
+    
+ }
+ .client-items{
+    padding: 34px;
+ }
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url('../contact\ -\ Copy.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px;
+}
+#contact-box input,
+.contact-box textarea{
+    width:100px;
+    padding:0.5rem;margin: 5px;
+} 
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box .lable{
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer{
+    background-color: black;
+    color:white;
+    padding:9px 20px;
+}
+
+ /* utility classes */
+ .h-primary{
+    font-size:3.8rem;
+    padding:12px;
+    font-family: monospace;
+ }
+
+ .h-secondary{
+    font-size:2.8rem;
+    padding:12px;
+    font-family: monospace;
+ }
+
+ 
+ .btn{
+    padding:6px 20px;
+    border:3px solid white;
+    background-color: brown;
+    color: aliceblue;
+    margin:17px;
+    font-size: 1.2rem;
+    border-radius:10px;
+    cursor: pointer;
+ }
+ .center{
+    text-align: center;
+ }
